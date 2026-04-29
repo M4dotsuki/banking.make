@@ -1,4 +1,5 @@
 const axios = require('axios')
+const InvestecSandbox = require('./investec_sandbox')
 const logError = (error) => console.log(error.toJSON())
 
 // Simple adapter to fetch bearer tokens and proxy requests to Investec's API
@@ -9,6 +10,22 @@ class Investec {
 
   constructor(credentials) {
     this.credentials = credentials
+
+    if (this.isSandboxCredentials(credentials)) {
+      return new InvestecSandbox()
+    }
+  }
+
+  isSandboxCredentials(credentials) {
+    if (!credentials) { return false }
+    if (credentials === 'SANDBOX') { return true }
+
+    try {
+      const decoded = Buffer.from(credentials, 'base64').toString()
+      return decoded.split(':').includes('SANDBOX')
+    } catch {
+      return false
+    }
   }
 
   async getAuthToken() {

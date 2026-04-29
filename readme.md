@@ -1,7 +1,7 @@
 # Bounties Playground | banking.make.dev
 
-The **Programmable Banking Community** is a community of 800+ software devs on a mission.
-We want to make Programmable Banking a reality for South African developers and businesses: by building open-source tech with Investec Programmable Banking foundations. [Learn more here](https://offerzen.gitbook.io/programmable-banking-community-wiki/).
+The **Programmable Banking Community** is a community of 3,000+ software devs on a mission.
+We want to make Programmable Banking a reality for South African developers and businesses: by building open-source tech with Investec Programmable Banking foundations. [Learn more here](https://investec.gitbook.io/programmable-banking-community-wiki).
 
 # What is this repo about?
 
@@ -34,7 +34,7 @@ __What do I do when I find a bounty I like?__
 
 
 __Where do I get support?__
-- Great question! Drop into the [dedicated bounties Slack channel here](https://offerzen-community.slack.com/archives/C048GPNT49W). We'll be more than happy to help with any questions or support around your bounties build/ the bounties in general/ or if you just want to hang out and help others. 
+- Great question! Drop into the [dedicated bounties Slack channel here](https://investec-dev-com.slack.com/archives/C05MNBE2G3C). We'll be more than happy to help with any questions or support around your bounties build/ the bounties in general/ or if you just want to hang out and help others. 
 
 💡 __ProTip:__ If you learn something interesting while working in the codebase, be sure to add it in `./knowledge` so everyone can benefit!
 

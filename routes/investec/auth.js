@@ -32,7 +32,6 @@ function getAuth(_req, _res, next) {
   if (authType == "Basic") {
     let { token, username, partition } = splitPartitionFromToken(partitionedToken)
     _req.currentUser = { username, partition, token }
-    console.log(_req.currentUser)
   }
 
   if (authType == "RootCard") {
